@@ -1,32 +1,80 @@
 /* PROGRESS PAGE SPECIFIC STYLES */
 
 /* -------------------  MOBILE  --------------------- */
-header {
-  background-image: url('https://via.placeholder.com/1150');
-}
 
 main#two-columns {
-    margin: 50px 0;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    color: white;
 }
 
 main#two-columns section {
-    max-width: 50vw;
+    max-width: 50%;
+}
+
+section#accelerate p {
+    color: white;
 }
 
 section#accelerate button {
     height: 300px;
     width: 300px;
     margin: 30px auto;
-    border-radius: 180%;
-    background-color: green;
-    border-color: rgb(14, 166, 6);
+    background-color: #cda703;
+    border-color: #ddd;
     cursor: pointer;
+    font-size: 2rem;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+    box-shadow: 10px 10px 1px #e9e9e9;
+    border-radius: 30px;
+    border: 3px solid #e9e9e9;
+    font-weight: bold;
+}
+
+section#accelerate button:active {
+    box-shadow: 5px 5px 0px #e9e9e9;
 }
 
 #big-numbers {
     font-weight: bolder;
     font-size: 70px;
+    color: white;
+}
+
+.progressFooter {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 20px;
+    p {
+        color: white;
+    }
+}
+
+.progressFooter::before {
+    background-image: url("../images/footer_image.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: -110px;
+    -webkit-filter: brightness(0.7);
+    filter: brightness(0.7);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
 
 /* -------------------  TABLET  --------------------- */
